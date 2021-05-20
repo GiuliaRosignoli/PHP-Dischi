@@ -29,8 +29,8 @@
             <?php foreach($database as $disc) { ?>
                 <div class="item"> <!--single disc -->
                     <img src="<?php echo $disc['poster']; ?>" alt="">
-                    <h4><?php echo $disc['title']; ?></h4>
-                    <h3><?php echo $disc['author']; ?></h3>
+                    <h3><?php echo $disc['title']; ?></h3>
+                    <h4><?php echo $disc['author']; ?></h4>
                     <h4><?php echo $disc['year']; ?></h4>
                     <h5><?php echo $disc['genre']; ?></h5>
                 </div>
