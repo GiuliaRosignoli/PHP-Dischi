@@ -1,0 +1,54 @@
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+}
+
+body {
+    padding-top: 70px;
+}
+
+/* Utilities */
+
+.flex {
+    display: flex;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    position: relative;
+}
+
+.header-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background-color: #061325;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    padding-top: 5px;
+}
+
+/* Main */
+ .main-wrapper {
+     height: calc(100vh - 70px);
+     background-color: #051937;
+ }
