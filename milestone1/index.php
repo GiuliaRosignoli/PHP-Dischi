@@ -34,8 +34,9 @@
                     <h3><?php echo $disc['author']; ?></h3>
                     <h4><?php echo $disc['year']; ?></h4>
                     <h5><?php echo $disc['genre']; ?></h5>
+                    <?php } ?>
                 </div>
-                <?php } ?>
+              
 
                 
             </div>
