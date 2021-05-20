@@ -19,8 +19,26 @@
         </div>
     </header>
     <main>   <!-- Main -->
-        <div class="main-wrapper">
-        ciaoooooooooooooooooooooo
+
+    <?php include './partials/database.php';  //PHP include
+    var_dump($database);
+    ?>
+
+        <div class="main-wrapper">   <!-- discs section starts here -->
+            <div class="item container flex">
+               
+                <div class="item"> <!--single disc -->
+                <?php foreach($database as $disc) { ?>
+                    <div class="box"><?php echo $disc['poster']; ?></div>
+                    <h4><?php echo $disc['title']; ?></h4>
+                    <h3><?php echo $disc['author']; ?></h3>
+                    <h4><?php echo $disc['year']; ?></h4>
+                    <h5><?php echo $disc['genre']; ?></h5>
+                </div>
+                <?php } ?>
+
+                
+            </div>
         </div> <!-- general wrapper -->
     </main>
 
