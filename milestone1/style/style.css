@@ -7,8 +7,19 @@
     color: #fff;
 }
 
-body {
-    padding-top: 70px;
+h3 {
+    padding-top: 10px;
+    font-size: 0.9rem;
+}
+
+h4 {
+    padding-top: 0.5rem;
+    font-size: 0.8rem;
+}
+
+h5 {
+    padding-top: 0.5rem;
+    font-size: 0.7rem;
 }
 
 /* Utilities */
@@ -44,26 +55,39 @@ header {
 
 /* Main */
  .main-wrapper {
-     height: calc(100vh - 70px);
-     background-color: #051937;
+     height: 100vh;
+     background-color: #051937; 
  }
 
  .main-wrapper .item.container {
     justify-content: center;
     flex-wrap: wrap;
     height: 100%;
-    margin-bottom: 30px;
+    padding-top: 30px;
  }
 
 
 .item {
     justify-content: center;
     align-items: center;
-    flex-basis: calc(100% / 3 - 10px);
-    background-color: black;
+    flex-basis: calc(100% / 3);
+   
 }
 
+.card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+    background-color: black;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+
 .item img {
-    width: 85px;
-    height: 85px;
+    width: 90px;
+    height: 90px;
+    padding-bottom: 5px;
 }

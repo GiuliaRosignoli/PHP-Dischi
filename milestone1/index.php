@@ -28,11 +28,13 @@
 
             <?php foreach($database as $disc) { ?>
                 <div class="item"> <!--single disc -->
+                   <div class="card flex">
                     <img src="<?php echo $disc['poster']; ?>" alt="">
-                    <h3><?php echo $disc['title']; ?></h3>
-                    <h4><?php echo $disc['author']; ?></h4>
-                    <h4><?php echo $disc['year']; ?></h4>
-                    <h5><?php echo $disc['genre']; ?></h5>
+                        <h3><?php echo $disc['title']; ?></h3>
+                        <h4><?php echo $disc['author']; ?></h4>
+                        <h4><?php echo $disc['year']; ?></h4>
+                        <h5><?php echo $disc['genre']; ?></h5>
+                   </div>
                 </div>
             <?php } ?>
 
