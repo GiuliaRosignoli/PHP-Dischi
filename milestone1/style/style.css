@@ -60,4 +60,10 @@ header {
     justify-content: center;
     align-items: center;
     flex-basis: calc(100% / 3 - 10px);
+    background-color: black;
+}
+
+.item img {
+    width: 85px;
+    height: 85px;
 }
