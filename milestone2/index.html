@@ -25,20 +25,17 @@
     
             <div class="main-wrapper">   <!-- discs section starts here -->
                 <div class="item container flex">
-    
                
-                    <div class="item"> <!--single disc -->
-                       <div class="card flex">
-                        <img src="" alt="">
-                            <h3></h3>
-                            <h4></h4>
-                            <h4></h4>
-                            <h5></h5>
+                    <div class="item flex"> <!--single disc -->
+                       <div class="card flex" v-for="(item, index) in discs">
+                        <img :src="item.poster" :alt="item.title">
+                            <h3>{{item.title}}</h3>
+                            <h4>{{item.author}}</h4>
+                            <h4>{{item.year}}</h4>
+                            <h5>{{item.genre}}</h5>
                        </div>
                     </div>
                 
-    
-                    
                 </div>
             </div> <!-- general wrapper -->
         </main>
