@@ -26,17 +26,17 @@
 
         <div class="main-wrapper">   <!-- discs section starts here -->
             <div class="item container flex">
-               
+            <?php foreach($database as $disc) { ?>
                 <div class="item"> <!--single disc -->
-                <?php foreach($database as $disc) { ?>
+               
                     <div class="box"><?php echo $disc['poster']; ?></div>
                     <h4><?php echo $disc['title']; ?></h4>
                     <h3><?php echo $disc['author']; ?></h3>
                     <h4><?php echo $disc['year']; ?></h4>
                     <h5><?php echo $disc['genre']; ?></h5>
-                    <?php } ?>
+                   
                 </div>
-              
+                <?php } ?>
 
                 
             </div>
