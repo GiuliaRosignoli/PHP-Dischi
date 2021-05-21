@@ -16,6 +16,8 @@
             <div class="header-wrapper">
                 <div class="container flex">
                     <img class="logo" src="./style/img/logo.png" alt="logo">
+                    <div class="filler"></div>
+                    <input type="text" placeholder="What are you looking for?">
                 </div>
             </div>
         </header>
@@ -26,16 +28,16 @@
             <div class="main-wrapper">   <!-- discs section starts here -->
                 <div class="item container flex">
                
-                    <div class="item flex"> <!--single disc -->
+            <!--        <div class="item"> single disc -->
                        <div class="card flex" v-for="(item, index) in discs">
-                        <img :src="item.poster" :alt="item.title">
+                            <img :src="item.poster" :alt="item.title">
                             <h3>{{item.title}}</h3>
                             <h4>{{item.author}}</h4>
                             <h4>{{item.year}}</h4>
                             <h5>{{item.genre}}</h5>
                        </div>
-                    </div>
-                
+                  <!--  </div> -->
+                  
                 </div>
             </div> <!-- general wrapper -->
         </main>

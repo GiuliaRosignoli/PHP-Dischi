@@ -45,7 +45,12 @@
         ]
     ];
 
+    $test = $_GET["disc"];
+    var_dump($_GET);
+    var_dump($test);
 
-    header('Content-Type: application/json');
-    echo json_encode($database);
+    $filtered_discs = [];
+
+ /*   header('Content-Type: application/json');
+    echo json_encode($database); */
 ?>
