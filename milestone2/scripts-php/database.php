@@ -45,12 +45,20 @@
         ]
     ];
 
-    $test = $_GET["disc"];
+    $search = $_GET["disc"];
     var_dump($_GET);
-    var_dump($test);
+    var_dump($search);
 
-    $filtered_discs = [];
+    foreach($database as $item){
+        if($search == $item) {
+            $disc_matches[] = $database;
+             $database;
+        }
+        
+    }
 
- /*   header('Content-Type: application/json');
+    $disc_matches = []; 
+
+  /*  header('Content-Type: application/json');
     echo json_encode($database); */
 ?>
