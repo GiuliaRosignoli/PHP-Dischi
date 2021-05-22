@@ -54,14 +54,13 @@
     print_r($_POST);
     
 
-  /*  foreach($database as $item){
-        if($search == $item) {
-            $disc_matches[] = $database;
-             $database;
+    foreach($database as $item){
+        if($search == $item['$author']) {
+            $disc_matches[] = $search;
+        } else {
+            return 'ciao';
         }
-        
-    }  */
-
+    } 
     $disc_matches = []; 
 
   /*  header('Content-Type: application/json');
