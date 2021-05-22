@@ -45,23 +45,25 @@
         ]
     ];
 
-    $search = $_GET["disc"];
+   
    /* var_dump($_GET);
     var_dump($search);  */
 
     echo $_POST['my_html_input_tag'];
     echo "<br><br>";
     print_r($_POST);
+
+    $search = $_POST['my_html_input_tag'];
+    $disc_matches = []; 
     
 
     foreach($database as $item){
-        if($search == $item['$author']) {
+        if($item['author'] == $search) {
             $disc_matches[] = $search;
-        } else {
-            return 'ciao';
-        }
+        } 
     } 
-    $disc_matches = []; 
+    
+    
 
   /*  header('Content-Type: application/json');
     echo json_encode($database); */
