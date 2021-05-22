@@ -46,16 +46,21 @@
     ];
 
     $search = $_GET["disc"];
-    var_dump($_GET);
-    var_dump($search);
+   /* var_dump($_GET);
+    var_dump($search);  */
 
-    foreach($database as $item){
+    echo $_POST['my_html_input_tag'];
+    echo "<br><br>";
+    print_r($_POST);
+    
+
+  /*  foreach($database as $item){
         if($search == $item) {
             $disc_matches[] = $database;
              $database;
         }
         
-    }
+    }  */
 
     $disc_matches = []; 
 
