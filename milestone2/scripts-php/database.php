@@ -51,7 +51,7 @@
 
     echo $_POST['my_html_input_tag'];
     echo "<br><br>";
-    print_r($_POST);
+   /* print_r($_POST); */
 
     $search = $_POST['my_html_input_tag'];
     $disc_matches = []; 
@@ -63,6 +63,7 @@
         } 
     } 
     
+    var_dump($disc_matches);
     
 
   /*  header('Content-Type: application/json');
