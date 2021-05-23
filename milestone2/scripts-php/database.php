@@ -46,15 +46,14 @@
     ];
 
    
-   /* var_dump($_GET);
-    var_dump($search);  */
+    $query = $_GET['disc'];
+    var_dump($_GET);
 
     echo $_POST['my_html_input_tag'];
     echo "<br><br>";
    /* print_r($_POST); */
    
-    $query = $_GET['disc'];
-    var_dump($_GET);
+   
     $search = $_POST['my_html_input_tag'];
     $disc_matches = []; 
     
