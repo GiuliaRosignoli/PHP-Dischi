@@ -52,18 +52,20 @@
     echo $_POST['my_html_input_tag'];
     echo "<br><br>";
    /* print_r($_POST); */
-
+   
+    $query = $_GET['disc'];
+    var_dump($_GET);
     $search = $_POST['my_html_input_tag'];
     $disc_matches = []; 
     
 
-    foreach($database as $item){
+   foreach($database as $item){
         if($item['author'] == $search) {
             $disc_matches[] = $search;
-        } 
+        }
     } 
     
-    var_dump($disc_matches);
+   var_dump($disc_matches); 
     
 
   /*  header('Content-Type: application/json');
