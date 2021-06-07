@@ -1,6 +1,6 @@
 console.log('Vue', Vue);
 
-const vm = new Vue({
+const vm = new Vue({ //Vue instance
     el: '#vm',
     data: {
         discs: [],
@@ -20,3 +20,5 @@ const vm = new Vue({
     }
 });
 
+
+//file:///C:/wamp64/www/PHP%20Dischi/milestone2/scripts-php/database.php
